@@ -13,9 +13,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/vsmart/casuarina/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/xdroid/config/common.mk)
+XDROID_BOOT_DARK := true
+XDROID_UI_BLUR := true
 
-PRODUCT_NAME := lineage_casuarina
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_BOOTANIMATION_HALF_RES := true
+
+PRODUCT_NAME := xdroid_casuarina
 PRODUCT_BRAND := vsmart
 PRODUCT_DEVICE := casuarina
 PRODUCT_MANUFACTURER := vsmart

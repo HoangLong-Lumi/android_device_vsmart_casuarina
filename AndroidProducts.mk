@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_casuarina.mk
+    $(LOCAL_DIR)/xdroid_casuarina.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_casuarina-eng \
-    lineage_casuarina-user \
-    lineage_casuarina-userdebug
+    xdroid_casuarina-eng \
+    xdroid_casuarina-user \
+    xdroid_casuarina-userdebug
